@@ -57,3 +57,6 @@ dependencies:
 - wheel=0.29.0=py27_0
 - xz=5.0.5=1
 - zlib=1.2.8=3
+- hypothesis=3.4.2=py27_0
+- enum34=1.1.6=py27_1
+
