@@ -2,7 +2,7 @@ name: sunpy-figure-tests
 channels:
 - conda-forge
 dependencies:
-- astropy=1.1.2=np111py27_0
+- astropy=1.2.1=np111py27_0
 - beautifulsoup4=4.4.1=py27_0
 - bsddb=1.0=py27_1
 - cairo=1.12.18=6
@@ -26,7 +26,7 @@ dependencies:
 - networkx=1.11=py27_0
 - nomkl=1.0=0
 - numpy=1.11.0=py27_nomkl_1
-- openblas=0.2.14=4
+- openblas=0.2.14
 - openjpeg=2.1.0=5
 - openssl=1.0.2h=1
 - pandas=0.18.1=np111py27_0
