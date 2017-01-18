@@ -6,10 +6,10 @@ channels:
 dependencies:
 - astropy=1.2.1=np111py35_0
 - beautifulsoup4=4.5.3=py35_0
-- conda-forge::glymur=0.8.8=py35_0
-- conda-forge::hypothesis=3.6.1=py35_0
-- conda-forge::openjpeg=2.1.2=2
-- conda-forge::wcsaxes=0.9=py35_0
+- glymur=0.8.8=py35_0
+- hypothesis=3.6.1=py35_0
+- openjpeg=2.1.2=2
+- wcsaxes=0.9=py35_0
 - contextlib2=0.5.4=py35_0
 - cycler=0.10.0=py35_0
 - dbus=1.10.10=0
