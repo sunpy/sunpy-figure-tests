@@ -1,4 +1,4 @@
-name: sunpy-figure-tests-35
+name: sunpy-figure-tests-3.5
 channels:
 - defaults
 - conda-forge

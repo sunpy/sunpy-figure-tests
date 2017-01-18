@@ -1,4 +1,4 @@
-name: sunpy-figure-tests
+name: sunpy-figure-tests-2.7
 channels:
 - conda-forge
 dependencies:
