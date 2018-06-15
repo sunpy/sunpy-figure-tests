@@ -17,5 +17,13 @@
     "sunpy.map.tests.test_plotting.test_plot_masked_aia171_nowcsaxes": "33fa63e41671b851d038ed5bbc6272c6b9423880f2ddedfb6ef188513aa7a8f6",
     "sunpy.map.tests.test_plotting.test_plot_masked_aia171_superpixel": "6f8ebb5df0f5feb1f2f986a86aa854992c2bbcc422b329392e43ea6fa2d4dbe3",
     "sunpy.map.tests.test_plotting.test_plot_masked_aia171_superpixel_nowcsaxes": "a34f0342097bd3967aefdaaea335ff084df2fbe6466330312abc8398538f7b1a",
-    "sunpy.map.tests.test_plotting.test_rectangle_aia171": "3c2e977ccf7d07ca1b56e216ea06fc634259fa425526f643eaaab685d79a0afe"
+    "sunpy.map.tests.test_plotting.test_rectangle_aia171": "3c2e977ccf7d07ca1b56e216ea06fc634259fa425526f643eaaab685d79a0afe",
+    "sunpy.timeseries.tests.test_timeseriesbase.test_eve_peek": "c483d82bacee7217e4d18f6a8433457fcc698746fae71065208223c2d5e5eb6a",
+    "sunpy.timeseries.tests.test_timeseriesbase.test_fermi_gbm_peek": "213ea4e7e86de1951c357fa3e149c4c76f95ac7fe5e1ba035d78cbd5122b7947",
+    "sunpy.timeseries.tests.test_timeseriesbase.test_generic_ts_peek": "ca11e496d4dcb157841a76513543694af61a7562181f61250619c1bfa9e5b70c",
+    "sunpy.timeseries.tests.test_timeseriesbase.test_lyra_peek": "7cc6b761b6f015e5c2470f561de2ef029592dbd77ed97203a2f9895c6b140bc4",
+    "sunpy.timeseries.tests.test_timeseriesbase.test_noaa_ind_peek": "10f1fc9e29f41f07ba63b119170e2ba649fa6440b0e23ffd32baee59b5df9aed",
+    "sunpy.timeseries.tests.test_timeseriesbase.test_noaa_pre_peek": "09c2fb9890be936cdd414309c456e624c39183f594c663d4956fa9c20cf7a289",
+    "sunpy.timeseries.tests.test_timeseriesbase.test_norh_peek": "1e03ed25af3b6534a50c849e3b37c7307f8903009966744440d77cfc231c3855",
+    "sunpy.timeseries.tests.test_timeseriesbase.test_rhessi_peek": "0efa07c81fcf5ef99f9b09be131dac2bf2ae5509e4c123b72930f09562ed4b7c"
 }
