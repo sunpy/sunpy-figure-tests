@@ -1,2 +1,2 @@
-sunpy
+git+https://github.com/sunpy/sunpy.git
 pytest
