@@ -24,3 +24,15 @@ def test_hash(fig_path):
     with open(fig_path, 'rb') as f:
         fhash = hash._hash_file(f)
     assert hashes[fig_path.stem] == fhash
+
+
+def test_missing_figures():
+    stems = [p.stem for p in figure_paths]
+    missing = []
+    for key in hashes:
+        if key not in stems:
+            missing.append(key)
+
+    if len(missing):
+        missing = '\n'.join(missing)
+        raise RuntimeError(f'The following figure tests are missing an image:\n{missing}')
