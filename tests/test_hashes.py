@@ -23,7 +23,11 @@ ids = [figure_path.name for figure_path in figure_paths]
 def test_hash(fig_path):
     with open(fig_path, 'rb') as f:
         fhash = hash._hash_file(f)
-    assert hashes[fig_path.stem] == fhash
+    fname = fig_path.stem
+    if fname in hashes:
+        assert hashes[fname] == fhash
+    else:
+        raise RuntimeError(f'The following figure does not have an associated hash: {fname}')
 
 
 def test_missing_figures():
