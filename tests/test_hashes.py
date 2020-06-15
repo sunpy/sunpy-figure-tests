@@ -8,32 +8,43 @@ import pytest
 from sunpy.tests import hash
 
 
-hashfile = 'https://raw.githubusercontent.com/sunpy/sunpy/master/sunpy/tests/figure_hashes_py36.json'
-hashfile = urllib.request.urlopen(hashfile)
-hashes = json.load(hashfile)
+envs = {'py37-figure-devdeps': 'mpl_dev_ft_261_astropy_dev.json',
+        'py38-figure': 'mpl_321_ft_261_astropy_401post1.json'}
 
 
-figpath = pathlib.Path(os.path.abspath(__file__)) / '..' / '..' / 'figures' / 'figure_py36'
-figpath = figpath.resolve()
-figure_paths = [x for x in figpath.iterdir() if x.suffix == '.png']
-ids = [figure_path.name for figure_path in figure_paths]
+def get_hashes(env):
+    hashfile = f'https://raw.githubusercontent.com/sunpy/sunpy/master/sunpy/tests/figure_hashes_{envs[env]}'
+    hashfile = urllib.request.urlopen(hashfile)
+    hashes = json.load(hashfile)
+    return hashes
 
 
-@pytest.mark.parametrize('fig_path', figure_paths, ids=ids)
-def test_hash(fig_path):
-    with open(fig_path, 'rb') as f:
-        fhash = hash._hash_file(f)
-    fname = fig_path.stem
-    if fname in hashes:
-        assert hashes[fname] == fhash
-    else:
-        raise RuntimeError(f'The following figure does not have an associated hash: {fname}')
+def get_figpaths(env):
+    figpath = pathlib.Path(os.path.abspath(__file__)) / '..' / '..' / 'figures' / env
+    figpath = figpath.resolve()
+    figure_paths = [x for x in figpath.iterdir() if x.suffix == '.png']
+    return figure_paths
 
 
-def test_missing_figures():
-    stems = [p.stem for p in figure_paths]
+envs = {env: {'hashes': get_hashes(env), 'fig_paths': get_figpaths(env)} for env in envs}
+
+
+@pytest.mark.parametrize('env', envs)
+def test_hashes(env):
+    hash_list = envs[env]['hashes']
+    # Check each figure has a hash that matches
+    for fig_path in envs[env]['fig_paths']:
+        with open(fig_path, 'rb') as f:
+            fhash = hash._hash_file(f)
+        fname = fig_path.stem
+        if fname in hash_list:
+            assert hash_list[fname] == fhash
+        else:
+            raise RuntimeError(f'The following figure does not have an associated hash: {fname}')
+    # Check each hash has a figure
+    stems = [p.stem for p in envs[env]['fig_paths']]
     missing = []
-    for key in hashes:
+    for key in envs[env]['hashes']:
         if key not in stems:
             missing.append(key)
 
