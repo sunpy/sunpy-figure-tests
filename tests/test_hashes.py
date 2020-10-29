@@ -9,11 +9,12 @@ from sunpy.tests import hash
 
 
 envs = {'py37-figure-devdeps': 'mpl_dev_ft_261_astropy_dev.json',
-        'py38-figure': 'mpl_321_ft_261_astropy_401post1.json'}
+        'py38-figure': 'mpl_332_ft_261_astropy_401post1.json'}
 
 
 def get_hashes(env):
     hashfile = f'https://raw.githubusercontent.com/sunpy/sunpy/master/sunpy/tests/figure_hashes_{envs[env]}'
+    print(hashfile)
     hashfile = urllib.request.urlopen(hashfile)
     hashes = json.load(hashfile)
     return hashes
