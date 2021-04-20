@@ -5,11 +5,11 @@ import urllib.request
 
 import pytest
 
-from sunpy.tests import hash
+from pytest_mpl import plugin
 
 
 envs = {'py37-figure-devdeps': 'mpl_dev_ft_261_astropy_dev.json',
-        'py38-figure': 'mpl_332_ft_261_astropy_401post1.json'}
+        'py38-figure': 'mpl_332_ft_261_astropy_42.json'}
 
 
 def get_hashes(env):
@@ -36,7 +36,7 @@ def test_hashes(env):
     # Check each figure has a hash that matches
     for fig_path in envs[env]['fig_paths']:
         with open(fig_path, 'rb') as f:
-            fhash = hash._hash_file(f)
+            fhash = plugin._hash_file(f)
         fname = fig_path.stem
         if fname in hash_list:
             assert hash_list[fname] == fhash
