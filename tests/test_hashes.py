@@ -9,7 +9,7 @@ from pytest_mpl import plugin
 
 
 envs = {'py37-figure-devdeps': 'mpl_dev_ft_261_astropy_dev.json',
-        'py38-figure': 'mpl_332_ft_261_astropy_401post1.json'}
+        'py38-figure': 'mpl_332_ft_261_astropy_42.json'}
 
 
 def get_hashes(env):
