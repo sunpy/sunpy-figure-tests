@@ -1,0 +1,16 @@
+{
+  "mpl_animators.tests.test_basefuncanimator.test_lineanimator_figure": "4a20e24a7da5b4eeb3d503fcd4abb91e0c0f0b101993752ad413551febe8d4b6",
+  "mpl_animators.tests.test_wcs.test_array_animator_wcs_2d_simple_plot": "98c2330f3c5d94559ac687b5d4b004bb2217a5b0fd0f1686c3e009d840bc04b7",
+  "mpl_animators.tests.test_wcs.test_array_animator_wcs_2d_clip_interval": "83236e2d388ee01bdddf99ba4433e7015f155f46cfe1766a3c9d8bd5d3710cc3",
+  "mpl_animators.tests.test_wcs.test_array_animator_wcs_2d_celestial_sliders": "7f1ca9295320b0cee5a7b50af5e856ba279df19d44f5949deeba0cdd6e06d451",
+  "mpl_animators.tests.test_wcs.test_array_animator_wcs_2d_update_plot": "c2029f80af5e9d100a2dc834b59accfd850ab7d907bc1d5bce06d0c753d49bc6",
+  "mpl_animators.tests.test_wcs.test_array_animator_wcs_2d_transpose_update_plot": "029ece4b78e2e80df1d3050a389b8b57a1565775052ae864dcd77b7ad2b8f9c8",
+  "mpl_animators.tests.test_wcs.test_array_animator_wcs_2d_colorbar_buttons": "a3fd3a99e4ecc70af07ff55bfd97db72cbf0443af702577bdaa1fd4904cbe577",
+  "mpl_animators.tests.test_wcs.test_array_animator_wcs_2d_colorbar_buttons_default_labels": "40956fa5497f86944ac9fb9bd5f7774f22ec48ef3b9da6f62de8addd2b0e4dd2",
+  "mpl_animators.tests.test_wcs.test_array_animator_wcs_2d_extra_sliders": "0fa964a1c37f5a09cdaecc21cb8615b42fa17f5d2afe675137f5ace566dc5d82",
+  "mpl_animators.tests.test_wcs.test_array_animator_wcs_1d_update_plot": "b63b9cb7895dfc8402f224f3f45ed51230f6cc42a32f32e2cc1b366773bf4158",
+  "mpl_animators.tests.test_wcs.test_array_animator_wcs_1d_update_plot_masked": "0df1831b03a8f24a6f1ff44dede8af82ab50700871717670809c3f0707bb73b5",
+  "mpl_animators.tests.test_wcs.test_array_animator_wcs_coord_params": "f5420659988f95e1208216264f44587b5998e568d065421b8fe580fa094fbdd5",
+  "mpl_animators.tests.test_wcs.test_array_animator_wcs_coord_params_no_ticks": "d31fde4e3ce10097b29c68fb315d56ce22e8ffd5e348c20af1b4063a84b645b8",
+  "mpl_animators.tests.test_wcs.test_array_animator_wcs_coord_params_grid": "3458d054afba0f2f66745e6d0b746a48c41135022cdaabce300f581a9b080507"
+}
