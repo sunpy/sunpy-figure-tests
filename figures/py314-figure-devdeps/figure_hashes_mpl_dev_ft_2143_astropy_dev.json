@@ -10,7 +10,7 @@
   "mpl_animators.tests.test_wcs.test_array_animator_wcs_2d_extra_sliders": "0fa964a1c37f5a09cdaecc21cb8615b42fa17f5d2afe675137f5ace566dc5d82",
   "mpl_animators.tests.test_wcs.test_array_animator_wcs_1d_update_plot": "b63b9cb7895dfc8402f224f3f45ed51230f6cc42a32f32e2cc1b366773bf4158",
   "mpl_animators.tests.test_wcs.test_array_animator_wcs_1d_update_plot_masked": "0df1831b03a8f24a6f1ff44dede8af82ab50700871717670809c3f0707bb73b5",
-  "mpl_animators.tests.test_wcs.test_array_animator_wcs_coord_params": "f5420659988f95e1208216264f44587b5998e568d065421b8fe580fa094fbdd5",
+  "mpl_animators.tests.test_wcs.test_array_animator_wcs_coord_params": "3e951fda9c46f2af5cdafde36e8ce08e8e1eeaaf82308b19a1db32dcd609dfce",
   "mpl_animators.tests.test_wcs.test_array_animator_wcs_coord_params_no_ticks": "d31fde4e3ce10097b29c68fb315d56ce22e8ffd5e348c20af1b4063a84b645b8",
-  "mpl_animators.tests.test_wcs.test_array_animator_wcs_coord_params_grid": "3458d054afba0f2f66745e6d0b746a48c41135022cdaabce300f581a9b080507"
+  "mpl_animators.tests.test_wcs.test_array_animator_wcs_coord_params_grid": "575cb6a9cc18a13db5e6e6a7082cc2b0b78a6afd32fa98174bc12cc0e576debb"
 }
